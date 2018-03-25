@@ -1,0 +1,15 @@
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\bin\Debug\ImpedanceCalculator.exe.config
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\bin\Debug\ImpedanceCalculator.exe
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\bin\Debug\ImpedanceCalculator.pdb
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\App.g.cs
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator_MarkupCompile.cache
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator_MarkupCompile.lref
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\MainWindow.baml
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator.g.resources
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator.Properties.Resources.resources
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator.csproj.GenerateResource.cache
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator.exe
+C:\Users\Alexandre\source\repos\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\ImpedanceCalculator.pdb

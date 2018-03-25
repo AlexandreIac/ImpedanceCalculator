@@ -1,0 +1,53 @@
+﻿<Window x:Class="ImpedanceCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImpedanceCalculator"
+        mc:Ignorable="d"
+        Title="Impedance Calculator" Height="450" Width="800">
+    <Grid Background="#FFE4C6C6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="24,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Text="set f (frequency in Hertz)"/>
+        <ListView x:Name="frequencyList" HorizontalAlignment="Left" Height="180" Margin="24,40,0,0" VerticalAlignment="Top" Width="134" SelectionChanged="ListView_SelectionChanged" AutomationProperties.Name="frequencyList">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="add" HorizontalAlignment="Left" Margin="131,225,0,0" VerticalAlignment="Top" Width="27" Click="AddButton"/>
+        <TextBox x:Name="NewFrequency" HorizontalAlignment="Left" Height="20" Margin="24,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" AutomationProperties.Name="newFrequency" TextChanged="NewFrequency_TextChanged"/>
+        <TextBlock x:Name="errorFrequency" HorizontalAlignment="Left" Margin="24,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" AutomationProperties.Name="errorFrequency"/>
+        <Button x:Name="RLCButton" Content="RLC" HorizontalAlignment="Left" Margin="24,331,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="ButtonRLC"/>
+        <Button x:Name="LCButton" Content="LC" HorizontalAlignment="Left" Margin="24,361,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="ButtonLC"/>
+        <Button x:Name="RLButton" Content="RL" HorizontalAlignment="Left" Margin="24,271,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="ButtonRL"/>
+        <Button x:Name="RCButton" Content="RC" HorizontalAlignment="Left" Margin="24,301,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="ButtonRC"/>
+        <TextBox HorizontalAlignment="Left" Height="0" Margin="361,147,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1"/>
+        <ListView x:Name="ElementsList" HorizontalAlignment="Left" Height="180" Margin="345,40,0,0" VerticalAlignment="Top" Width="185" SelectionChanged="ListView_SelectionChanged_1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Element" DisplayMemberBinding="{Binding Element}" Width="60"/>
+                    <GridViewColumn Header="Value" DisplayMemberBinding="{Binding Value}" Width="60"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="60"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="EnterName" HorizontalAlignment="Left" Height="23" Margin="542,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="EnterName_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="542,43,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" RenderTransformOrigin="-0.311,0.487"/>
+        <TextBox x:Name="EnterValue" HorizontalAlignment="Left" Height="23" Margin="542,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="EnterValue_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="542,87,0,0" TextWrapping="Wrap" Text="value" VerticalAlignment="Top" RenderTransformOrigin="-0.311,0.487"/>
+        <TextBlock x:Name="ErrorValue" HorizontalAlignment="Left" Margin="542,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="211" RenderTransformOrigin="0.5,0.872"/>
+        <ListView x:Name="Result" HorizontalAlignment="Left" Height="180" Margin="163,40,0,0" VerticalAlignment="Top" Width="132">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="R" DisplayMemberBinding="{Binding Real}" Width="40"/>
+                    <GridViewColumn Header="X" DisplayMemberBinding="{Binding Imaginary}" Width="40"/>
+                        <GridViewColumn Header="Z" DisplayMemberBinding="{Binding Impedance}" Width="40"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
