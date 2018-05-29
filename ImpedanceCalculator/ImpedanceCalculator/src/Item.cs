@@ -13,11 +13,4 @@ namespace ImpedanceCalculator.src
             public string Name { get; set; }
         public int Id { get; set; }
     }
-
-    class Result
-    {
-        public double Real { get; set; }
-        public double Imaginary { get; set; }
-        public double Impedance { get; set; }
-    }
 }

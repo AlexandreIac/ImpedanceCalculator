@@ -57,6 +57,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="src\Capacitor.cs" />
+    <Compile Include="src\Result.cs" />
     <Compile Include="src\Inductor.cs" />
     <Compile Include="src\Item.cs" />
     <Compile Include="src\Resistor.cs" />
@@ -69,7 +70,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\Circuit.cs" />
-    <Compile Include="src\IElement.cs" />
+    <Compile Include="src\Element.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

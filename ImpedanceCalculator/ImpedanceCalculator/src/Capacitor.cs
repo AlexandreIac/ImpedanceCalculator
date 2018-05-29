@@ -3,13 +3,9 @@ using System.Numerics;
 
 namespace ImpedanceCalculator.src
 {
-    class Capacitor : IElement
+    class Capacitor : Element
     {
-        public int id { get; set; }
 
-        public string element { get; set; }
-        public string Name { get; set; }
-        private double value { get; set; }
         public double Value
         {
             get { return this.value; }
@@ -20,17 +16,14 @@ namespace ImpedanceCalculator.src
             }
         }
 
-        public Capacitor(double value, string name, int id)
+        public Capacitor(string Name, int Id, double value)
+            : base(Name, Id, value, "capacitor")
         {
-            this.Name = name;
-            this.value = value;
-            this.id = id;
-            this.element = "capacitor";
         }
 
         public event FncGenericEvent ValueChanged;
 
-        public Complex CalculateZ(double frequency)
+        override public Complex CalculateZ(double frequency)
         {
             Complex Xl = new Complex(0, 1 / (2 * Math.PI * frequency * value));
             return (Xl);
